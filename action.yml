@@ -1,0 +1,19 @@
+# action.yml
+name: 'Ratify action'
+description: 'Verify given subject has a valid signature'
+inputs:
+  verification-certs:
+    description: 'One or more certificates (comma delimited) for verification.'
+    required: true
+  subject:
+    description: 'Subject of verification'
+    required: true
+outputs:
+  verification: # id of output
+    description: 'Verification output'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.signing-cert }}
+    - ${{ inputs.subject }}
