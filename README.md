@@ -29,3 +29,14 @@ jobs:
       - name: Get verification results
         run: echo "Verification results are ${{ steps.ratify.outputs.verification }}"
 ```
+## Contributing
+
+Please see our [contributing guide](./CONTRIBUTING.md)
+
+## Support
+
+[Please search open issues on GitHub](https://github.com/deislabs/ratify-action/issues), and if your issue isn't already represented please [open a new one](https://github.com/deislabs/ratify-action/issues/new). The Ratify action maintainers will respond to the best of their abilities.
+
+## Code of Conduct
+
+Please see our [Code of Conduct](./CODE_OF_CONDUCT.md)
